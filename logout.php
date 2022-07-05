@@ -1,4 +1,4 @@
 <?php
 @session_start();
-@session_destroy();
-header("Location: http://localhost/oauth2/");
+unset($_SESSION['PASSPORT_PROFILE']);
+header("location: index.php");
